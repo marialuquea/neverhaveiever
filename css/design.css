@@ -21,3 +21,13 @@ button {
     font-family: inherit;
     font-size: 30px;
 }
+.add-option{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+.add-option > input {
+    border-radius: 10px;
+    height: 40px;
+    width: 200px;
+}

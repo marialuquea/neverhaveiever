@@ -16,38 +16,35 @@
 
     <button onclick="next()">Next</button>
 
+    
+    <div class="add-option">
+      <p id="error"></p>
+      <input type="text" id="option">
+      <button onclick="add()">Add your own</button>  
+    </div>
+    
   </body>
 
   <script>
     
 
     function next() {
-
         nhie = [
             'Kissed someone with garlic breath',
             'Gotten drunk before meeting someone because I was nervous',
             'Beaten Ben at chess',
-            'had sex without wanting to',
             'had sex with more than one person in the same day',
-            'wanted to fuck the mother / father of a friend',
-            "wanted to fuck a friend's brother / sister",
             'wanted to hook up with someone present',
-            'had sexual fantasies about someone that I did not consider attractive',
+            'had dreams about someone that I did not consider attractive',
             'done it without any protection',
-            "cum in someone's mouth/had someone cum in my mouth",
-            "wanted to fuck a friend's boyfriend / girlfriend",
+            "wanted to get with a friend's boyfriend / girlfriend",
             'been asked to go slower because I was going too fast',
             'left someone with blueballs',
             'been blueballed',
             'had the typical "lights on / off" discussion',
-            'found a hair in my mouth after doing oral',
-            'cheated',
             'been cheated on',
             'doubted my sexual orientation',
-            'had sex with two people of the opposite sex in one night',
             'had an affair with someone and I immediately regretted it',
-            'had sex out of grief',
-            'had sex out of pity',
             'fucked my ex',
             'been caught in the middle of sex',
             'done it in a public place',
@@ -164,10 +161,12 @@
             'gone into the wrong hole',
             'kissed a really bad kisser'
         ]
-        console.log(nhie.length);
-        console.log(Math.floor(Math.random() * (nhie.length)));
-        console.log(nhie[Math.floor(Math.random() * (nhie.length))]);
-        document.getElementById("phrase").innerHTML = nhie[Math.floor(Math.random() * (nhie.length))];;
+        document.getElementById("phrase").innerHTML = nhie[Math.floor(Math.random() * (nhie.length))];
     }
+  
+    function add() {
+      document.getElementById("error").innerHTML = "This feature is not yet added, pls whatsapp Maria with your idea, thank you!";
+    }
+
   </script>
 </html>
