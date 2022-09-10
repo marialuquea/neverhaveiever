@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/design.css" type="text/css"/>
+    <link href='https://fonts.googleapis.com/css?family=Actor' rel='stylesheet'/>
+    <link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'/>
+    <link rel='icon' href='images/favicon.ico'/>
+    <title>Maria's Never Have I ever...</title>
+  </head>
+
+  <body>
+
+    <h2>Maria's Never Have I Ever...</h2>
+
+    <h1 id="phrase">Press next to start the fun!</h1>
+
+    <button onclick="next()">Next</button>
+
+  </body>
+
+  <script>
+    
+
+    function next() {
+
+        nhie = [
+            'Kissed someone with garlic breath',
+            'Gotten drunk before meeting someone because I was nervous',
+            'Beaten Ben at chess'
+        ]
+
+        document.getElementById("phrase").innerHTML = nhie[Math.floor(Math.random() * (nhie.length))];;
+    }
+  </script>
+</html>

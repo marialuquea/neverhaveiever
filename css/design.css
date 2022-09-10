@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    background-color: #F5E6E8;
+    font-family: 'Amatic SC';
+    font-size: 50px;
+    text-align: center;
+}
+h2 {
+    padding: 20px auto;
+    color: #963D5A;
+}
+h1 {
+    color: #C589E8;
+    padding: 0 10%;
+}
+button {
+    background-color: #E3DAFF;
+    border-radius: 40px;
+    border-color: white;
+    padding: 10px 40px;
+    font-family: inherit;
+    font-size: 30px;
+}
