@@ -2,7 +2,6 @@
 <html>
   <head>
     <link rel="stylesheet" href="css/design.css" type="text/css"/>
-    <link href='https://fonts.googleapis.com/css?family=Actor' rel='stylesheet'/>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'/>
     <link rel='icon' href='images/favicon.ico'/>
     <title>Maria's Never Have I ever...</title>
@@ -15,19 +14,9 @@
     <h1 id="phrase">Press next to start the fun!</h1>
 
     <button onclick="next()">Next</button>
-
-    
-    <!-- <div class="add-option">
-      <p id="error"></p>
-      <input type="text" id="option">
-      <button onclick="add()">Add your own</button>  
-    </div> -->
-    
   </body>
 
   <script>
-    
-
     function next() {
         nhie = [
             'Kissed someone with garlic breath',
@@ -145,13 +134,8 @@
             "dated a friend's ex",
             "eaten leftover food from another table at a restaurant"
         ]
-        document.getElementById("error").innerHTML = "";
         document.getElementById("phrase").innerHTML = nhie[Math.floor(Math.random() * (nhie.length))];
     }
   
-    function add() {
-      document.getElementById("error").innerHTML = "This feature is not yet added, pls whatsapp Maria with your idea, thank you!";
-    }
-
   </script>
 </html>
